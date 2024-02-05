@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "react-bootstrap";
 
 const Titulo = ({ texto }) => {
   const [texto2, setTexto2] = useState("");
@@ -10,8 +11,8 @@ const Titulo = ({ texto }) => {
 
   return (
     <article>
-      <h1>Hello {friend}</h1>
-      <button onClick={() => setTexto(friend + texto)}>click me</button>
+      <h1>Hello {texto} {texto2}</h1>
+      <Button onClick={mostrarTexto}>click me</Button>
     </article>
   );
 };

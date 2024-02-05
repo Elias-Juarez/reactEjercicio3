@@ -6,7 +6,7 @@ function App() {
 
   return (
     <section>
-      <Titulo texto></Titulo>
+      <Titulo texto={texto}></Titulo>
     </section>
   )
 }
